@@ -1,0 +1,28 @@
+.App-header {
+    background-color: #e78401;
+    position: fixed;
+    left:0px;
+    top:48px;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    color: #000000;
+}
+
+.image{
+    left: 4000px;
+}
+
+.App-header-edit {
+    position: fixed;
+    left:0px;
+    top:48px;
+    width: 100%;
+    height: 100%;
+}
+
+.label {
+    padding-left: 30px;
+}
