@@ -15,6 +15,7 @@ const connection = mongoose.connection;
 connection.once('open', function() {
     console.log("MongoDB database connection established successfully");
 })
+module.exports = {mongoose};
 
 evidenceRoutes.route('/').get(function(req, res) {
     Evidence.find(function(err, evidence) {
