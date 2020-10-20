@@ -26,7 +26,7 @@ export default class EvidenceList extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:4000/evidence/')
+        axios.get(process.env.MONGODB_URI || 'http://localhost:4000/evidence/')
             .then(response => {
                 this.setState({ evidence: response.data });
             })
