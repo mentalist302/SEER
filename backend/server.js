@@ -10,7 +10,7 @@ var text;
 let Evidence = require('./evidence.model');
 app.use(cors());
 app.use(bodyParser.json());
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/evidence', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 const connection = mongoose.connection;
 connection.once('open', function() {
     console.log("MongoDB database connection established successfully");
